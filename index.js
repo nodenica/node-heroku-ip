@@ -8,7 +8,7 @@ module.exports = function(environments) {
   return function(req, res, next) {
     req.heroku = req.heroku || {};
     if (_.contains(environments, process.env.NODE_ENV)) {
-      req.heroku.ip = req.headers['X-Forwarded-For'];
+      req.heroku.ip = req.headers['x-forwarded-for'];
       next();
     }
     else {
