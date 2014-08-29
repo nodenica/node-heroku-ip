@@ -12,6 +12,7 @@ module.exports = function(environments) {
       next();
     }
     else {
+      req.heroku.ip = '0.0.0';
       next();
     }
   };
