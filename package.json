@@ -29,5 +29,8 @@
   "homepage": "https://github.com/paulomcnally/node-heroku-ip",
   "dependencies": {
     "underscore": "^1.7.0"
+  },
+  "devDependencies": {
+    "express": "^4.8.6"
   }
 }
